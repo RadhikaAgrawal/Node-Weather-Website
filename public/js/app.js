@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...';
     messageTwo.textContent = '';
     const location = searchElement.value;
-    const url = 'http://127.0.0.1:3000/weather?address='+location;
+    const url = '/weather?address='+location;
 
     fetch(url).then((response) => {
     response.json().then((data) => {
